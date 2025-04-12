@@ -1,5 +1,5 @@
-import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
-import { usePermissStore } from '../store/permiss';
+import {createRouter, createWebHashHistory, RouteRecordRaw} from 'vue-router';
+import {usePermissStore} from '../store/permiss';
 import Home from '../views/home.vue';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
@@ -263,7 +263,7 @@ const routes: RouteRecordRaw[] = [
         },
         component: () => import(/* webpackChunkName: "404" */ '../views/pages/404.vue'),
     },
-    { path: '/:path(.*)', redirect: '/404' },
+    {path: '/:path(.*)', redirect: '/404'},
 ];
 
 const router = createRouter({
